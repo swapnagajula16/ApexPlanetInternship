@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+ 
+ body {
+    background: rgb(24, 32, 79);
+}
+ 
+ .quizapp ,
+ #container
+ {
+    background-color: rgb(251, 252, 253);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+ 
+}
+ 
+.quizapp h1 {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #021d48;
+    font-weight: 800;
+    border-bottom: 1px solid #001e4d;
+    text-align: center;
+    padding-bottom: 25px;
+}
+ 
+.quizapp h2 {
+    font-family: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #022051;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+}
+ 
+.btn {
+    background-color: white;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #001e4d;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5;
+}
+ 
+.btn:hover:not([disabled]) {
+    background-color: #272323;
+    color: white;
+}
+ 
+.btn:disabled {
+    cursor: no-drop;
+}
+ 
+#next-btn {
+    background-color: #001e4d;
+    color: white;
+    border: 0;
+    padding: 10px;
+    font-weight: 600;
+    width: 100px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+ 
+.correct {
+    background-color: #023f1c;
+}
+ 
+.incorrect {
+    background-color: rgb(122, 6, 6);
+}
+ 
+.hidden {
+    display: none;
+}
+ 
+.container .hidden{
+    width: 420px;
+    padding: 50px 0;
+    background-color: rgb(211, 208, 208);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+ 
+.circular-progress {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#001e4d 3.6deg, #ededed 0deg);
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+ 
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+ 
+.progress-value{
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    color: #001e4d;
+}
+
+ /* joke styling */
+
+h1 {
+    font-size: 10vh;
+}
+  
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+  
+#Jokebtn {
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(31, 19, 201);
+    border: 2px solid rgb(8, 2, 91);
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+   .quizapp,
+   #container {
+     width: 95%;
+     padding: 20px;
+   }
+ 
+   .quizapp h1 {
+     font-size: 32px;
+   }
+ 
+   .quizapp h2 {
+     font-size: 22px;
+   }
+ 
+   .btn {
+     font-size: 16px;
+     padding: 8px;
+   }
+ 
+   .circular-progress {
+     width: 200px;
+     height: 200px;
+   }
+ 
+   .circular-progress::before {
+     width: 170px;
+     height: 170px;
+   }
+ 
+   .progress-value {
+     font-size: 40px;
+   }
+ 
+   h1 {
+     font-size: 6vh;
+   }
+ 
+   #Jokebtn {
+     padding: 8px 30px;
+   }
+ }
+ @media (max-width: 480px) {
+   .quizapp,
+   #container {
+     width: 95%;
+     padding: 15px;
+   }
+ 
+   .quizapp h1 {
+     font-size: 26px;
+   }
+ 
+   .quizapp h2 {
+     font-size: 18px;
+   }
+ 
+   .btn {
+     font-size: 14px;
+     padding: 8px;
+   }
+ 
+   #next-btn {
+     width: 100%;
+   }
+ 
+   .circular-progress {
+     width: 160px;
+     height: 160px;
+   }
+ 
+   .circular-progress::before {
+     width: 130px;
+     height: 130px;
+   }
+ 
+   .progress-value {
+     font-size: 30px;
+   }
+ 
+   h1 {
+     font-size: 5vh;
+   }
+ 
+   #Jokebtn {
+     width: 100%;
+     padding: 10px;
+   }
+ }
+ 
